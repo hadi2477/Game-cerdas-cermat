@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Cerdas Cermat</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Layar Awal -->
+        <div id="start-screen" class="screen active">
+            <h1>🧠 Cerdas Cermat</h1>
+            <p>Uji pengetahuanmu sebelum waktu habis!</p>
+            <button id="start-btn" class="btn">Mulai Bermain</button>
+        </div>
+
+        <!-- Layar Bermain -->
+        <div id="quiz-screen" class="screen">
+            <div class="header">
+                <span id="question-number">Soal 1/5</span>
+                <span class="timer-box">⏱️ <span id="time-left">15</span>d</span>
+                <span id="score-display">Skor: 0</span>
+            </div>
+            <h2 id="question-text">Pertanyaan akan muncul di sini...</h2>
+            <div id="options-container" class="options-grid">
+                <!-- Tombol pilihan jawaban akan dibuat otomatis oleh JS -->
+            </div>
+        </div>
+
+        <!-- Layar Hasil Akhir -->
+        <div id="result-screen" class="screen">
+            <h1>🎉 Permainan Selesai!</h1>
+            <p>Skor Akhir Kamu:</p>
+            <div id="final-score" class="big-score">0</div>
+            <button id="restart-btn" class="btn">Main Lagi</button>
+        </div>
+    </div>
+<script type="module" src="questions.js"></script>
+<script type="module" src="timer.js"></script>
+<script type="module" src="game.js"></script>
+<script type="module" src="main.js"></script>
+<body>
+</html>
